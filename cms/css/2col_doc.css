@@ -1,0 +1,12 @@
+
+/*************************************
+* 两列式模版自定义
+*************************************/
+/*侧栏浮动*/
+#box_main .box_left_f {
+	position: fixed;
+	top: 0px;
+	_position: absolute;
+	_bottom: auto;
+	_top: expression(eval(document.documentElement.scrollTop));
+}

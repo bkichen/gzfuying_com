@@ -1,0 +1,645 @@
+
+/*************************************
+* 自定义配置样式
+*************************************/
+/*sitemap*/
+@import url("../../css/cooperation/gzfezx/styles/sitemap.css")
+/*tpa=http://www.gzfezx.net/styles/../../css/cooperation/gzfezx/styles/sitemap.css*/
+;
+/*rcode*/
+@import url("../../css/cooperation/gzfezx/styles/rcode.css")
+/*tpa=http://www.gzfezx.net/styles/../../css/cooperation/gzfezx/styles/rcode.css*/
+;
+
+/*table*/
+/*@import url("table.css");*/
+/**html滚动条**/
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/**body**/
+body {
+    background: url(../images/page_bg.gif)
+        /*tpa=http://www.gzfezx.net/images/page_bg.gif*/
+        no-repeat center 0px;
+}
+
+#gallery_detail {
+    background: none;
+}
+
+#gy,
+#daoyi,
+#news_list,
+#news_detail {
+    /*tpa=http://www.gzfezx.net/images/page_bg2.jpg*/
+    /*background: url(../images/page_bg2.jpg) no-repeat center -28px;*/
+    background: url(../images/page_bg_hos.jpg) no-repeat center top;
+}
+
+#products_list,
+#products_type {
+    background: url(../images/page_bg3.jpg)
+        /*tpa=http://www.gzfezx.net/images/page_bg3.jpg*/
+        no-repeat center 0px;
+}
+
+#medi_list,
+#medi_list2 {
+    /*tpa=http://www.gzfezx.net/images/page_bg4.jpg*/
+    /*background: url(../images/page_bg4.jpg) no-repeat center 0px;*/
+    background: url(../images/page_bg_hos.jpg) no-repeat center top;
+}
+
+#pati {
+    background: url(../images/page_bg5.jpg)
+        /*tpa=http://www.gzfezx.net/images/page_bg5.jpg*/
+        no-repeat center 0px;
+}
+
+#rese_list,
+#rese_detail {
+    background: url(../images/page_bg6.jpg)
+        /*tpa=http://www.gzfezx.net/images/page_bg6.jpg*/
+        no-repeat center 0px;
+}
+
+#acad_list,
+#acad_detail {
+    background: url(../images/page_bg7.jpg)
+        /*tpa=http://www.gzfezx.net/images/page_bg7.jpg*/
+        no-repeat center 0px;
+}
+
+#djgz_list,
+#djgz_detail {
+    background: url(../images/page_bg9.gif)
+        /*tpa=http://www.gzfezx.net/images/page_bg9.gif*/
+        no-repeat center 0px;
+}
+
+#myjk_list,
+#myjk_detail {
+    background: url(../images/page_bg21.jpg)
+        /*tpa=http://www.gzfezx.net/images/page_bg9.gif*/
+        no-repeat center 0px;
+}
+
+#index {
+    background: none;
+}
+
+/*#products_list {
+	background: url(/images/page_bg.gif) no-repeat center 90px;
+}*/
+/* table 表格样式*/
+table,
+tr,
+td,
+th {
+    text-align: center;
+    padding: 5;
+}
+
+/* input textarea   表单样式  
+--------------------------------------------------------------------*/
+.input,
+.textarea {
+    background: url(../images/input.gif)
+        /*tpa=http://www.gzfezx.net/images/input.gif*/
+        no-repeat left top;
+    border: 1px solid #cccccc;
+    border-bottom-color: #dddddd;
+    border-right-color: #dddddd;
+}
+
+/*其他默认*/
+/*input, textarea {
+	background: url(/images/input.gif) repeat-x left top;
+	border: 1px solid #cccccc;
+	border-bottom-color: #dddddd;
+	border-right-color: #dddddd;
+}
+input {
+	height: 23px;
+	line-height: 23px;
+}*/
+/**去除默认组件底部填充 columnSpace**/
+#elem-FrontSpecifies_show01-logo,
+#elem-FrontSpecifies_show01-copyright,
+#elem-FrontPublic_counter01-001,
+#elem-FrontNews_list01-1407464854519,
+#elem-FrontSpecifies_show01-1406248068515 {
+    padding-bottom: 0px;
+}
+
+#elem-FrontSpecifies_show01-copyright {
+    width: 630px;
+}
+
+/**全局编辑器 htmledit**/
+#box_root .htmledit,
+#box_root .htmledit p,
+#box_root .describe,
+#box_root .describe P {
+    color: #333;
+    line-height: 26px;
+}
+
+#box_root .describe {
+    font-size: 12px;
+}
+
+#FrontProductsCategory_detail01-1399451670615_cont_1 p {
+    text-align: left;
+}
+
+/**全局层级关系**/
+#box_left {
+    margin-top: -70px;
+    position: relative;
+    z-index: 7;
+}
+
+#box_right {
+    position: relative;
+    z-index: 6;
+}
+
+/**模版全局控制**/
+#box_root {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#box_header {
+    float: none;
+    width: 100%;
+    height: 175px;
+}
+
+#index #box_header {
+    height: 90px;
+}
+
+#box_header_top {
+    float: none;
+    height: 125px;
+    width: 100%;
+    background: url(../images/head_top.png)
+        /*tpa=http://www.gzfezx.net/images/head_top.png*/
+        no-repeat center top;
+    position: relative;
+    z-index: 9;
+}
+
+#box_logo {
+    float: left;
+    width: 450px;
+}
+
+#box_totalsearch {
+    float: right;
+    width: 180px;
+    margin-top: 45px;
+    overflow: hidden;
+    height: 26px;
+    background: url(../images/search.gif)
+        /*tpa=http://www.gzfezx.net/images/search.gif*/
+        no-repeat left top;
+}
+
+#box_wb {
+    float: right;
+    width: 220px;
+    margin-top: 47px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+#box_wb a:link {
+    color: #666;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+#box_wb a:hover {
+    color: #0095d9;
+}
+
+#box_nav {
+    height: 47px;
+    float: none;
+    width: 100%;
+    background: url(../images/nav_bg.png)
+        /*tpa=http://www.gzfezx.net/images/nav_bg.png*/
+        no-repeat center top;
+    _background: url(../images/nav_bg.gif)
+        /*tpa=http://www.gzfezx.net/images/nav_bg.gif*/
+        no-repeat center top;
+    z-index: 8;
+    position: relative;
+    top: -15px;
+}
+
+#box_adv {
+    float: none;
+    width: 100%;
+}
+
+#box_left {
+    float: left;
+    width: 210px;
+}
+
+@import url("1col_doc.css")
+/*tpa=http://www.gzfezx.net/styles/1col_doc.css*/
+;
+
+/*一列式模版自定义*/
+#box_right {
+    float: right;
+    width: 750px;
+}
+
+.box_right_t {
+    height: 25px;
+    background: url(../images/main_top.gif)
+        /*tpa=http://www.gzfezx.net/images/main_top.gif*/
+        no-repeat center top;
+}
+
+.box_right_c {
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 710px;
+    background: url(../images/main_c.gif)
+        /*tpa=http://www.gzfezx.net/images/main_c.gif*/
+        repeat-y center top;
+}
+
+.box_right_f {
+    height: 25px;
+    background: url(../images/main_foot.gif)
+        /*tpa=http://www.gzfezx.net/images/main_foot.gif*/
+        no-repeat center top;
+}
+
+#box_footer {
+    float: none;
+    width: 100%;
+}
+
+#box_banner {
+    float: none;
+    width: 100%;
+}
+
+#box_hide {
+    display: none;
+}
+
+/* 页面大统一宽度 */
+.pageWidth {
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#box_header_cont,
+#box_nav,
+#box_main,
+#box_footer,
+#box_hide {
+    margin: auto;
+    width: 980px;
+}
+
+#box_main {
+    float: none;
+    padding: 20px 0px;
+    margin-top: 150px;
+}
+
+#index #box_main {
+    margin-top: 0px;
+    /*top:-70px;*top:-30px;
+	position:relative;*/
+}
+
+/* 隐藏组件 */
+#elem-FrontColumns_navigation01-btmnav,
+#elem-FrontPublic_counter01-001 {
+    display: none;
+}
+
+/**其他自定义------------------------------------------------**/
+
+/*loading*/
+#loading {
+    z-index: 999999999;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background: #000;
+    height: 100%;
+    visibility: visible;
+    background: #fff;
+    background-attachment: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#loading_fl {
+    position: absolute;
+    margin-top: -16px;
+    width: 32px;
+    height: 32px;
+    margin-left: -16px;
+    top: 50%;
+    left: 50%;
+    background: url(../images/common/loading2.gif)
+        /*tpa=http://www.gzfezx.net/images/common/loading2.gif*/
+        no-repeat center 0px;
+}
+
+/* 百度地图
+--------------------------------------------------------------------*/
+.iw_poi_title {
+    color: #1b5eb1;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    padding-right: 13px;
+    white-space: nowrap;
+}
+
+.iw_poi_content {
+    overflow: visible;
+    padding-top: 4px;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word;
+}
+
+/*第三方插件说明页*/
+#elem-FrontSpecifies_show01-1395818597095,
+#FrontSpecifies_show01-1395818597095 {
+    padding: 0px;
+    line-height: 0px;
+}
+
+/*box_footer*/
+#footer_wrap {
+    float: none;
+    width: 100%;
+    height: 45px;
+    padding-top: 17px;
+    background: url(../images/foot.gif)
+        /*tpa=http://www.gzfezx.net/images/foot.gif*/
+        repeat-x center top;
+}
+
+#index #footer_wrap {
+    /*top:-70px;*top:-30px;
+	position:relative;*/
+}
+
+#box_footer .htmledit,
+#box_footer .htmledit p,
+#box_footer .describe,
+#box_footer .describe P,
+#box_footer a:link,
+#box_footer a:visited,
+#box_footer a:hover {
+    color: #999;
+    line-height: 20px;
+    text-align: right;
+}
+
+#FrontSpecifies_show01-copyright {
+    text-align: right;
+}
+
+#box_index_scroll {
+    position: relative;
+    width: 100%;
+    height: 160px;
+}
+
+#box_index_scroll .prev,
+#box_index_scroll .next {
+    position: absolute;
+    left: -30px;
+    top: 70px;
+    width: 26px;
+    height: 26px;
+    display: block;
+    background: url(../images/arr.gif)
+        /*tpa=http://www.gzfezx.net/images/arr.gif*/
+        no-repeat 0px 0px;
+}
+
+#box_index_scroll .next {
+    left: auto;
+    right: -30px;
+    background-position: 0px -26px;
+}
+
+#box_index_scroll .prev:hover {
+    background-position: -26px 0px;
+}
+
+#box_index_scroll .next:hover {
+    background-position: -26px -26px;
+}
+
+
+/*20140808-add*/
+.news_bg {
+    height: 33px;
+    width: 100%;
+    background: url(../images/index_new.gif)
+        /*tpa=http://www.gzfezx.net/images/index_new.gif*/
+        no-repeat center top;
+}
+
+.news_bg h2 {
+    width: 88px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    height: 33px;
+    line-height: 33px;
+    float: left;
+}
+
+#box_news_sroll {
+    width: 660px;
+    float: left;
+    height: 33px;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+    padding-left: 10px;
+}
+
+#box_news_sroll .prev,
+#box_news_sroll .next {
+    display: block;
+    width: 13px;
+    height: 8px;
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    background: url(../images/news_arr.gif)
+        /*tpa=http://www.gzfezx.net/images/news_arr.gif*/
+        no-repeat 0px 0px;
+}
+
+#box_news_sroll .next {
+    top: 18px;
+    right: 0px;
+    background-position: 0px -8px;
+}
+
+#box_news_type,
+#box_news_type p,
+#box_news_type .htmledit,
+#box_news_type .htmledit p,
+#box_news_type .describe,
+#box_news_type .describe P,
+#box_news_type a:link,
+#box_news_type a:visited,
+#box_news_type a:hover {
+    color: #666;
+    line-height: 33px;
+    text-align: right;
+}
+
+
+#box_foot_scroll {
+    width: 980px;
+    margin: auto;
+    height: 82px;
+    line-height: 82px;
+    background: url(http://www.gzfezx.com/images/link_bg.gif) no-repeat center top;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#box_foot_scroll h2 {
+    width: 90px;
+    float: left;
+    color: #3f9789;
+    font-weight: bold;
+    text-align: center;
+}
+
+#elem-FrontLinks_list01-1407465649454 {
+    float: left;
+    width: 850px;
+}
+
+#box_foot_scroll .prev,
+#box_foot_scroll .next {
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background: url(http://www.gzfezx.com/images/foot_arr.gif) no-repeat 0px 0px;
+}
+
+#box_foot_scroll .next {
+    top: 45px;
+    right: 15px;
+    background-position: 0px -10px;
+}
+
+.FrontSpecifies_show01-d1_c1 p img{
+	vertical-align: baseline;
+}
+
+#index #box_main {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+.header-search {
+	height: 32px;
+	line-height: 32px;
+	margin-top: 47px;
+	float: right;
+	overflow: hidden;
+}
+
+.header-search form {
+	position: relative;
+	height: 25px;
+	line-height: 25px;
+}
+
+.header-search .btn-submit {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	border: 0;
+	top: 1px;
+	right: 5px;
+	outline: none;
+	background: url(../images/icon_search.png) center no-repeat;
+	background-color: #fff;
+}
+
+.header-search .input-keyword {
+	height: 25px;
+	line-height: 25px;
+	padding: 0 30px 0 10px;
+	float: left;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	outline: none;
+	box-shadow: inset 0px 0px 3px 1px rgba(238,238,238,0.5);
+}
+
+.wrap-list-search li {
+	position: relative;
+    padding-left: 12px;
+    padding-right: 75px;
+	text-align: left;
+	border-bottom: 1px dashed #eee ;
+    font-size: 13px;
+    font-weight: normal;
+    background: url(../images/icon-09.gif) no-repeat left center;
+}
+
+.wrap-list-search li em {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 36px;
+	line-height: 36px;
+	color: #666;
+	font-style: normal;
+}
+
+.wrap-list-search li a {
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+    color: #000;
+}
+
+.wrap-list-search li a:hover{
+    color: #0095d9;
+}

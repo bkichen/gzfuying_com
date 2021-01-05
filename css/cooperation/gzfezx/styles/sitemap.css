@@ -1,0 +1,40 @@
+
+/*网站地图*/
+.sitemap {
+	width:100%;
+	text-align:left;
+}
+.sitemap .clearBoth{
+	height:10px;
+}
+.sitemap ul .m{
+	width:100%;
+	overflow:hidden;
+	display:block;
+	float:none;
+	border-bottom:dashed 1px #ccc;
+	padding-bottom:10px;
+}
+.sitemap ul li h3 a:link, .sitemap ul li h3 a:visited, .sitemap ul li h3 a:hover{
+	color:#0095d9;
+	font-size:15px;
+	display:block;
+	margin-bottom:10px;
+}
+.sitemap ul{
+	display:block;
+}
+.sitemap ul li{
+	float: left;
+	margin-right:15px;
+}
+.sitemap ul .last{
+	display:none;
+}
+.sitemap ul li a:link, .sitemap ul li a:visited, .sitemap ul li a:hover{
+	color:#333;
+}
+/*多级菜单*/
+.sitemap .nav-third, .sitemap .nav-fourth, .sitemap .nav-fifth{
+	display:none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>人才招聘</title>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+	<script language="javascript" type="text/javascript"> 
+	// 判断是否真的为单渠道（从接口获取到渠道为show的数量，并和配置作比较）
+	$.ajax({
+        url: utils.url + "zp/api/getHome?codeTypeId=PATH",
+        type: 'GET',
+        headers: {
+            'Content-type': 'application/json'
+          },
+        success:function(res){
+            if(res.code==200){
+                var pathList = res.data.data;
+                var showNum = 0;
+                var showList = [];
+                for(var i = 0; i < pathList.length; i++){
+                    if(pathList[i].SHOW==0){
+                        continue;
+                    }
+                    showNum++;
+                    showList.push(pathList[i]);
+                }
+                var firstZpqd = showList[0].CODETERMID;
+                $.ajax({
+			        url: utils.url + "zp/api/sysConfigure?cType=zp&cNum=9",
+			        type: 'GET',
+			        headers: {
+			            'Content-type': 'application/json'
+			          },
+			        success:function(res){
+			            if(res.code==200){
+			                var result = res.data;
+			                for(var i = 0; i < result.length;i++){
+			                    baseInfo[result[i].cKey] = result[i].cValue
+			                }
+			                if(showNum==0){
+			                	console.log("不存在有招聘岗位的渠道！请在对应渠道内新建招聘岗位");
+			                	window.location.href="/service/zhaopinFront/inviteJob2.html";
+			                }
+			                if(showNum==1){
+			                	if(baseInfo.unitName=='zsy'||baseInfo.unitName=='gfe'){
+			                		console.log("目前岗位只存在单个渠道内，请前往后台配置或新建渠道内岗位！");
+			                		window.location.href="/service/zhaopinFront/inviteJob2.html";
+			                	}
+			                }
+			                if(showNum>1){
+			                	if(baseInfo.unitName=='szy'||baseInfo.unitName=='gys'){
+			                		console.log("岗位存在于多渠道内，请前往后台配置或删除其他渠道内岗位！");
+			                		window.location.href="/service/zhaopinFront/inviteJob2.html";
+			                	}
+			                	
+			                }
+			                if(baseInfo.unitName=='szy'||baseInfo.unitName=='gys'){
+											window.location.href="/service/zhaopinFront/inviteJob2.html";
+											setCookie("zpqd", firstZpqd);
+               					setCookie("onlyone", 1);
+							}else{
+								window.location.href="/service/zhaopinFront/inviteJob2.html";
+							}
+			            }
+			        },
+			        error:function(res){
+			            if(res.status==0){
+			                alert("网络请求失败");
+			            }
+			        }
+			    })
+                
+            }
+        },
+        error:function(res){
+            if(res.status==0){
+                alert("网络请求失败");
+            }
+        }
+    })
+
+	
+　　
+</script>
+</head>
+<body>
+	
+</body>
+</html>
